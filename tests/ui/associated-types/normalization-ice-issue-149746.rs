@@ -1,4 +1,4 @@
-// edition: 2015..2021
+//@ edition: 2015..2021
 #![warn(rust_2021_incompatible_closure_captures)]
 trait Owner { type Ty<T: FnMut()>; }
 impl Owner for () { type Ty<T: FnMut()> = T; }
